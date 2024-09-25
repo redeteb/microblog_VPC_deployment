@@ -20,4 +20,4 @@ echo "Checking content of ngnix configuration file."
 cat /etc/nginx/sites-enabled/default
 
 # Run gunicorn web server
-gunicorn -b :5000 -4 microblog:app
+gunicorn -b :5000 -4 microblog:app --daemon
